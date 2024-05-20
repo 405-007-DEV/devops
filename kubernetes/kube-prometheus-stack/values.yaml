@@ -868,9 +868,9 @@ grafana:
   # Grafana.ini
   grafana.ini:
     auth:
-      disable_login_form: true
+      disable_login_form: false
     auth.anonymous:
-      enabled: true
+      enabled: false
       org_role: Admin
     dashboards:
       default_home_dashboard_path: /var/lib/grafana/dashboards/home.json
