@@ -10,3 +10,7 @@
 - ArgoCD
 - Sealed Secrets
 
+## Monitoring
+- Grafana
+- Prometheus
+- Loki
