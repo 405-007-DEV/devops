@@ -4,9 +4,9 @@ metadata:
   name: backend-prod-ingress
   namespace: api
   annotations:
-    # cert-manager.io/cluster-issuer: letsencrypt-prod
-    # kubernetes.io/tls-acme: "true"
-    # nginx.ingress.kubernetes.io/ssl-passthrough: "true"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    kubernetes.io/tls-acme: "true"
+    nginx.ingress.kubernetes.io/ssl-passthrough: "true"
     nginx.ingress.kubernetes.io/rewrite-target: /
     kubernetes.io/ingress.class: nginx
 spec:
@@ -21,7 +21,7 @@ spec:
                 name: backend-prod
                 port:
                   number: 8080
-  # tls:
-  #   - secretName: letsencrypt-prod
-  #     hosts:
-  #     - api.smallchat.kr
+  tls:
+    - secretName: letsencrypt-prod
+      hosts:
+        - api.smallchat.kr
