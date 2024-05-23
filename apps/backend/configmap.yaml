@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-prod-configmap
+  namespace: api
+data:
+  # Define the environment variables for the backend-prod container
+  some_key: some_value
