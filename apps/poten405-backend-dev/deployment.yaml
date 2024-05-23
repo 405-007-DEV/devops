@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backend-dev
-          image: hyeonwoo5342/backend-dev:5
+          image: hyeonwoo5342/poten405-backend-dev:5
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
